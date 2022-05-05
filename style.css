@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.greek{
+    font-family: 'Caesar Dressing', cursive;
+    color: #4c7bbe;
+}
+.logo{
+    font-size: 4.3rem;
+    text-align: center;
+}
+.menu > ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: white;
+    text-align: center;
+}
+.menu > ul > a{
+    padding: 20px;
+}
+#loading{
+    text-align: center;
+    padding-top: 50px;
+}
+footer{
+    background-color: #ebebeb;
+    text-align: center;
+}
+.foot{
+    text-align: center;
+    padding: 30px;
+    list-style-type: none;
+}
+.flex, .foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+/* Contact */
+
+form > div { margin: 8px 0; }
+span#dobMsg { color: gray; }
+label { display: inline-block; width: 100px; text-align: right; }
+input[type=submit] { margin-left: 105px; }
