@@ -3,7 +3,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
-console.log(id);
 
 const url = "https://lassestrand.no/eksamen1/wp-json/wp/v2/posts/" + id;
 
