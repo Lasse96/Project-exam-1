@@ -1,4 +1,4 @@
-const output = document.querySelector(".main");
+const output = document.getElementById("carousel");
 const url = "https://lassestrand.no/eksamen1/wp-json/wp/v2/posts?_embed";
 
 
@@ -15,12 +15,9 @@ function listPosts(posts){
     console.log(posts);
     for (let post of posts) {
         list += `
-        <div class="posts">
-        <div>
-        <a href="./blog.html?id=${post.id}"><img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="imgposts"></a>
-        <h2 class="title">${post.title.rendered}</h2>
-        <a href="./blog.html?id=${post.id}">Les om ${post.title.rendered}</a>
-        </div>
+        <div class="post">
+        <a href="./blog.html?id=${post.id}"><img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="imgposts postimg"></a>
+        <h2 class="title lesom"><a href="./blog.html?id=${post.id}" class="decor">${post.title.rendered}</a></h2>
         </div>`
     }
     output.innerHTML = list;
@@ -30,9 +27,23 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function lrSlides(n) {
-  showSlides(slideIndex += n);
+carousel = document.getElementById("carousel")
+
+function lSlide() {
+  carousel.scrollBy({
+    top: 0,
+    left: -1020,
+    behavior: 'smooth'
+  });
 }
+function rSlide() {
+  carousel.scrollBy({
+    top: 0,
+    left: 1020,
+    behavior: 'smooth'
+  });
+}
+
 
 function showSlides(n) {
     let i;
