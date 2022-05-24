@@ -280,14 +280,28 @@ label { display: inline-block; width: 100px; text-align: right; }
 
 /* Blog spesific */
 
-.wp-image-82, .wp-image-83{
+.wp-image-82, .wp-image-83, .wp-image-68, .wp-image-69{
     border-radius: 1000px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
 }
 .alignright{
     float: right;
     text-align: center;
     text-align: -webkit-center;
     object-fit: cover;
+}
+.alignleft{
+    float: left;
+    text-align: center;
+    text-align: -webkit-center;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+.alignleft > figcaption{
+    max-width: 200px;
+    font-size: 0.7vw;
 }
 .alignright > figcaption{
     max-width: 200px;
@@ -305,17 +319,21 @@ label { display: inline-block; width: 100px; text-align: right; }
 .stylep > p > a, .stylep > p > em > a, .stylep > p > sup > a, .stylep > p {
     color: black;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1vw;
+    font-size: 1.3rem;
     text-align: left;
 }
 .stylep > p{
     padding-bottom: 30px;
 }
 .greek3{
-    font-size: 2vw;
+    font-size: 2.2rem;
     padding-bottom: 30px;
 }
 .wp-container-1{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1vw;
+    font-size: 1.1rem;
+}
+.has-x-large-font-size{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
 }

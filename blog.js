@@ -89,3 +89,9 @@ function loadMore() {
         output.innerHTML += list;
     }
 }
+
+document.getElementsByTagName("img").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
