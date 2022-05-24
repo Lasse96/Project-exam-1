@@ -30,7 +30,7 @@
     padding-top: 50px;
     justify-content: center;
 }
-.greek, .lesom{
+.greek, .lesom, .greek3{
     font-family: 'Caesar Dressing', cursive;
     color: #4c7bbe;
 }
@@ -280,9 +280,42 @@ label { display: inline-block; width: 100px; text-align: right; }
 
 /* Blog spesific */
 
-.wp-image-82{
-    
+.wp-image-82, .wp-image-83{
+    border-radius: 1000px;
 }
 .alignright{
     float: right;
+    text-align: center;
+    text-align: -webkit-center;
+    object-fit: cover;
+}
+.alignright > figcaption{
+    max-width: 200px;
+    font-size: 0.7vw;
+}
+#blogoutput{
+    /* text-align: left; */
+    overflow-wrap: break-word;
+    color: black;
+    position: relative;
+}
+.blogspes{
+    max-width: 700px;
+}
+.stylep > p > a, .stylep > p > em > a, .stylep > p > sup > a, .stylep > p {
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    text-align: left;
+}
+.stylep > p{
+    padding-bottom: 30px;
+}
+.greek3{
+    font-size: 2vw;
+    padding-bottom: 30px;
+}
+.wp-container-1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
 }

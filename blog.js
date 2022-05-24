@@ -50,9 +50,12 @@ fetch(url)
     function listPost(post){
         console.log(post);
         output.innerHTML = `
-            <h2>${post.title.rendered}</h2>
-            <a href="./blog.html?id=${post.id}">Les om ${post.title.rendered}</a>
-            <p>${post.content.rendered}</p>
+            <div class="blogspes">
+                <h2 class="greek3">${post.title.rendered}</h2>
+                <div class="stylep">
+                    ${post.content.rendered}
+                </div>
+            </div>
             `
     }
     
