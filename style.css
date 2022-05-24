@@ -25,6 +25,9 @@
     font-size: 2rem;
     font-family: 'Bebas Neue', cursive;
 }
+#contact{
+    padding-right: 0;
+}
 #loading{
     text-align: center;
     padding-top: 50px;

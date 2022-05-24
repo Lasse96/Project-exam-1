@@ -57,8 +57,13 @@ fetch(url)
                 </div>
             </div>
             `
+            document.querySelector(".alignright").addEventListener("click", modal);
     }
     
+}
+
+function modal(e){
+console.log(e);
 }
 
 function loadMore() {
@@ -88,10 +93,4 @@ function loadMore() {
         }
         output.innerHTML += list;
     }
-}
-
-document.getElementsByTagName("img").addEventListener("click", myFunction);
-
-function myFunction() {
-  alert ("Hello World!");
 }
