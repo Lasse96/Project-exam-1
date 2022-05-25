@@ -57,14 +57,35 @@ fetch(url)
                 </div>
             </div>
             `
-            document.querySelector(".alignright").addEventListener("click", modal);
+
+        const alignright = document.querySelectorAll(".alignright img");
+            alignright.forEach(img => {
+                img.addEventListener('click', modal);
+            }
+        )
+        const alignleft = document.querySelectorAll(".alignleft img");
+            alignleft.forEach(img => {
+                img.addEventListener('click', modal);
+            }
+        )
     }
     
 }
 
-function modal(e){
-console.log(e);
+var bigPicture = document.getElementById("bigPicture");
+var modalImg = document.getElementById("img01");
+var altTxt = document.querySelector(".alttxt");
+
+function modal(){
+  bigPicture.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
+bigPicture.addEventListener('click',function(){
+    this.style.display="none";
+    }
+)
+
 
 function loadMore() {
     const url = "https://lassestrand.no/eksamen1/wp-json/wp/v2/posts?_embed&page=2";
@@ -94,3 +115,5 @@ function loadMore() {
         output.innerHTML += list;
     }
 }
+
+
