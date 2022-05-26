@@ -74,12 +74,10 @@ fetch(url)
 
 var bigPicture = document.getElementById("bigPicture");
 var modalImg = document.getElementById("img01");
-var altTxt = document.querySelector(".alttxt");
 
 function modal(){
   bigPicture.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 bigPicture.addEventListener('click',function(){
     this.style.display="none";
