@@ -73,7 +73,7 @@ fetch(url)
 }
 
 var bigPicture = document.getElementById("bigPicture");
-var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById("image");
 
 function modal(){
   bigPicture.style.display = "block";
