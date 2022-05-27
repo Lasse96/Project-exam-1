@@ -199,10 +199,24 @@ footer{
 
 /* Contact */
 
-form > div { margin: 8px 0; }
+/* form > div { margin: 8px 0; }
 span#dobMsg { color: gray; }
-label { display: inline-block; width: 100px; text-align: right; }
+label { display: inline-block; width: 100px; text-align: right; } */
 /* input[type=submit] { margin-left: 105px; } */
+.contact{
+    font-size: 1.2rem;
+    background: transparent;
+    color: black;
+    padding: 1.2rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 300px;
+}
+#form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 
 
 /* About us */
