@@ -137,7 +137,7 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
-.footh2, #footp, #submit, #email{
+.footh2, #footp, #submit, #email, #name, #subject{
     font-family: 'Bebas Neue', cursive;
 }
 .footh2{
@@ -168,7 +168,7 @@ footer{
     background-color: black;
     color: white;
 }
-#form{
+#formm{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -214,11 +214,24 @@ label { display: inline-block; width: 100px; text-align: right; } */
     max-width: 300px;
 }
 #form{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-
+#conttxt{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#form div{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+#subject{
+    
+}
 /* About us */
 
 #greektemple{
@@ -394,5 +407,22 @@ label { display: inline-block; width: 100px; text-align: right; } */
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    #form, #formm{
+        display: flex;
+        flex-direction: column;
+    }
+    #form div{
+        padding-bottom: 30px;
+        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    #submit{
+        margin-left: 0;
     }
   }
