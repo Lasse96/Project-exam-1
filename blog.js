@@ -48,8 +48,10 @@ fetch(url)
 
 
     function listPost(post){
-        console.log(post);
         output.innerHTML = `
+            <div id="backbut">
+                <a href="./blog.html"><button id="back">Back</button></a>
+            </div>
             <div class="blogspes">
                 <h2 class="greek3">${post.title.rendered}</h2>
                 <div class="stylep">
