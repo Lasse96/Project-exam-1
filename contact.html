@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
+        <script src="./JS/contact.js" defer></script>
         <link rel="stylesheet" href="./style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,26 +26,26 @@
         </div>
     </header>
     <h2 id="conttxt">Contact us</h2>
-    <form class="form">
+    <form id="form">
         <p id="submitted"></p>
-        <div>
-            <input type="text" id="namee" name="name" class="contact" placeholder="Name">
-            <span id="nameAlert"></span>
+        <div class="fl">
+           <div  class="test"> <input type="text" id="name" name="name" class="contact" placeholder="Name">
+            <span id="nameAlert"></span></div>
+        </div>
+        <div class="fl">
+            <div  class="test"><input type="text" id="subject" name="subject" class="contact" placeholder="Subject">
+            <span id="subjectAlert"></span></div>
+        </div>
+        <div class="fl">
+            <div  class="test"><input type="text" id="email" name="email" class="contact" placeholder="Email">
+            <span id="emailAlert"></span></div>
+        </div>
+        <div class="fl">
+            <div  class="test"><textarea id="message" name="message" class="contact" placeholder="Message" id="" cols="15" rows="5"></textarea>
+            <span id="messageAlert"></span></div>
         </div>
         <div>
-            <input type="text" id="emaill" name="email" class="contact" placeholder="Email">
-            <span id="emailAlertt"></span>
-        </div>
-        <div>
-            <input type="text" id="subjectt" name="message" class="contact" placeholder="Subject">
-            <span id="subjectAlert"></span>
-        </div>
-        <div>
-            <textarea id="message" rows="5" cols="70" class="contact" placeholder="Message"></textarea>
-            <span id="messageAlert"></span>
-        </div>
-        <div>
-            <input type="submit" value="Submit" id="submitt">
+            <input type="submit" value="Submit" id="submit">
         </div>
     </form>
     <footer>
@@ -55,11 +56,10 @@
         </div>
         <form class="form">
             <div>
-                <input type="text" id="email" name="email" placeholder="E-mail">
-                <span id="emailAlert"></span>
+                <input type="text" id="emaill" name="emaill" placeholder="E-mail">
             </div>
             <div>
-                <input type="submit" value="Sign up" id="submit">
+                <input type="submit" value="Sign up" id="submitt">
             </div>
         </form>
         <div class="foot">

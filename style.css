@@ -155,7 +155,7 @@ footer{
 #greek2{
     padding-left: 7px;
 }
-#email, #submit, #submitt, #loadm, #back, #emaill{
+#submit, #submitt, #loadm, #back, #emaill{
     font-size: 1.2rem;
     background: transparent;
     color: black;
@@ -217,7 +217,7 @@ footer{
     font-size: 1.2rem;
     background: transparent;
     color: black;
-    padding: 1.2rem;
+    padding: 1.4rem;
     border: 1px solid black;
     border-radius: 30px;
     width: 100%;
@@ -233,12 +233,25 @@ footer{
     text-align: center;
     padding-bottom: 20px;
 }
-#form div, .form div{
-    padding-left: 20px;
+#form div, .form div, .fl{
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+#submitted{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+.test{
+    width: 100%;
+}
+#nameAlert, #subjectAlert, #emailAlert, #messageAlert{
+    position: absolute;
+    padding-top: 72px;
+}
+
 
 /* About us */
 
@@ -408,9 +421,8 @@ footer{
       display: flex;
       flex-direction: column;
   }
-  #form div, .form div{
+  #form div, .form div, .fl{
       padding-bottom: 30px;
-      padding-left: 15px;
       display: flex;
       justify-content: center;
   }
