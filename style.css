@@ -142,7 +142,7 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
-.footh2, #footp, #submit, #submitt, #email, #emaill, #name, #subject, #subjectt, #aboutus, #loadm, #back, #namee{
+.footh2, #footp, #submit, #submitt, #email, #emaill, #name, #subject, #subjectt, #message, #aboutus, #loadm, #back, #namee{
     font-family: 'Bebas Neue', cursive;
 }
 .footh2{

@@ -26,6 +26,7 @@
     </header>
     <h2 id="conttxt">Contact us</h2>
     <form class="form">
+        <p id="submitted"></p>
         <div>
             <input type="text" id="namee" name="name" class="contact" placeholder="Name">
             <span id="nameAlert"></span>
@@ -35,8 +36,12 @@
             <span id="emailAlertt"></span>
         </div>
         <div>
-            <textarea id="subjectt" rows="5" cols="70" class="contact" placeholder="Subject"></textarea>
+            <input type="text" id="subjectt" name="message" class="contact" placeholder="Subject">
             <span id="subjectAlert"></span>
+        </div>
+        <div>
+            <textarea id="message" rows="5" cols="70" class="contact" placeholder="Message"></textarea>
+            <span id="messageAlert"></span>
         </div>
         <div>
             <input type="submit" value="Submit" id="submitt">

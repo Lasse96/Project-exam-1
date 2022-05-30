@@ -41,19 +41,19 @@ function right() {
 }
 
 const submitted = document.querySelector("#submitted");
-const form = document.querySelector("#form");
+const form = document.querySelector(".form");
 
-const yourName = document.querySelector("#name");
-const subject = document.querySelector("#subject");
-const email = document.querySelector("#email");
-const address = document.querySelector("#address");
+const yourName = document.querySelector("#namee");
+const subject = document.querySelector("#subjectt");
+const email = document.querySelector("#emaill");
+const message = document.querySelector("#message");
 
 const nameAlert = document.querySelector("#nameAlert");
 const subjectAlert = document.querySelector("#subjectAlert");
 const emailAlert = document.querySelector("#emailAlert");
-const addressAlert = document.querySelector("#addressAlert");
+const messageAlert = document.querySelector("#messageAlert");
 
-form.addEventListener("submit", runForm);
+form.addEventListener("submitt", runForm);
 
 function runForm(sub){
     sub.preventDefault();
@@ -69,14 +69,14 @@ function runForm(sub){
 
     let inputSubject = subject.value.trim();
     subjectAlert.innerHTML = "";
-    if(inputSubject.length < 10){
-        subjectAlert.innerHTML += "Must be atleast 10 letters";
+    if(inputSubject.length < 15){
+        subjectAlert.innerHTML += "Must be atleast 15 letters";
     }
 
-    let inputAddress = address.value.trim();
-    addressAlert.innerHTML = "";
-    if(inputAddress.length < 25){
-        addressAlert.innerHTML += "Must be atleast 25 letters";
+    let inputMessage = address.value.trim();
+    messageAlert.innerHTML = "";
+    if(inputMessage.length < 25){
+        messageAlert.innerHTML += "Must be atleast 25 letters";
     }
 
     let inputEmail = email.value.trim();
@@ -86,7 +86,7 @@ function runForm(sub){
         emailAlert.innerHTML += "Enter valid email";
     }
 
-    if (nameAlert.innerHTML === "" && emailAlert.innerHTML === "" && subjectAlert.innerHTML === "" && addressAlert.innerHTML === "") {
+    if (nameAlert.innerHTML === "" && emailAlert.innerHTML === "" && subjectAlert.innerHTML === "" && messageAlert.innerHTML === "") {
         submitted.innerHTML = "The form har been submitted";
         form.submit();
       } else {
