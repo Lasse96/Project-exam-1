@@ -35,6 +35,7 @@
     text-align: center;
     padding-top: 50px;
     justify-content: center;
+    width: 100%;
 }
 .greek, .lesom, .greek3{
     font-family: 'Caesar Dressing', cursive;
