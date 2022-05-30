@@ -16,7 +16,7 @@ function listPosts(posts){
     for (let post of posts) {
         list += `
         <div class="post">
-        <a href="./blog.html?id=${post.id}"><img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="imgposts postimg"></a>
+        <a href="./blog.html?id=${post.id}"><img src="${post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url}" class="imgposts postimg"></a>
         <h2 class="title lesom"><a href="./blog.html?id=${post.id}" class="decor">${post.title.rendered}</a></h2>
         </div>`;
     }
