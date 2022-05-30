@@ -11,43 +11,40 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caesar+Dressing&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
+<body>
     <header>
         <div class="header">
             <a href="index.html" style="text-decoration: none;"><h1 class="logo greek">Greek Gods</h1></a>
             <div class="menu">
                 <ul>
-                    <a href="index.html" id="home"><li>Home</li></a>
-                    <a href="blog.html"><li>Blog</li></a>
-                    <a href="about.html"><li>About us</li></a>
-                    <a href="contact.html" id="contact"><li>Contact</li></a>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html" id="contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
-<body>
-    <section>
         <div class="slider">
                 <div id="posts">
                     <div id="carousel">
                         <div id="loading">
-                            <img src="./svg/Thin fading line .gif" alt="Loading...">
+                            <img src="./svg/Thinfadingline.gif" alt="Loading...">
                         </div>
                     </div>
                 </div>
-                <a class="left" onclick="left()">&#10094</a>
-                <a class="right" onclick="right()">&#10095</a>
+                <a class="left" onclick="left()">&#10094;</a>
+                <a class="right" onclick="right()">&#10095;</a>
         </div>
-    </section>
-    <section>
         <div id="infodiv">
             <img src="./images/pexels-maryia-plashchynskaya-3552616.jpg"    alt="Gresk mytologi" id="infoimg">
             <div id="greskpb">
                 <p id="greskmyt">Gresk mytologi omfatter en mengde  mytologiske fortellinger fra antikkens Hellas, som handler om    de antikke grekernes guder og helter, verdens natur og deres   egne kulter og rituelle praksis.</p>
-                <a href="blog.html" id="buttona"><button id="butabout2">Read more</  button></a>
+                <div style="padding-top: 15px;">
+                    <a href="blog.html" id="buttona" class="butabout2">Read more</a>
+                </div>
             </div>
         </div>
-    </section>
-    <section>
         <div id="categorydiv">
             <div class="categorydiv1">
                 <a href="blog.html"><img src="/images/poseidon-g230c25db6_640.jpg"  alt="Greek god" id="categoryimg"></a>
@@ -62,35 +59,34 @@
                 </div>
             </div>
         </div>
-    </section>
+    <footer>
+        <h2 class="footh2">Our newsletter</h2>
+        <div class="flex">
+            <p id="footp">Join others and subscribe today to get notified whenever there is a new post about</p>
+            <p class="greek" id="greek2">Greek Gods.</p>
+        </div>
+        <form id="form">
+            <div>
+                <input type="text" id="email" name="email" placeholder="E-mail">
+                <span id="emailAlert"></span>
+            </div>
+            <div>
+                <input type="submit" value="Sign up" id="submit">
+            </div>
+        </form>
+        <div class="foot">
+            <ul>
+               <li><a href="index.html">Home</a>|</li>
+                <li><a href="blog.html">Blog</a>|</li>
+                <li><a href="about.html">About us</a>|</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <img src="/svg/instagram-brands.svg" alt="Instagram" class="social">
+        <img src="/svg/twitter-brands.svg" alt="Twitter" class="social">
+        <img src="/svg/pinterest-brands.svg" alt="Pinterest" class="social">
+        <br>
+        <strong>© 2023 Greek Gods</strong>
+    </footer>
 </body>
-<footer>
-    <h2 class="footh2">Our newsletter</h2>
-    <div class="flex">
-        <p id="footp">Join others and subscribe today to get notified whenever there is a new post about</p>
-        <p class="greek" id="greek2">Greek Gods.</p>
-    </div>
-    <form id="form">
-        <div>
-            <input type="text" id="email" name="email" placeholder="E-mail">
-            <span id="emailAlert"></span>
-        </div>
-        <div>
-            <input type="submit" value="Sign up" id="submit">
-        </div>
-    </form>
-    <div class="foot">
-        <ul>
-            <a href="index.html"><li>Home</li></a>|
-            <a href="blog.html"><li>Blog</li></a>|
-            <a href="about.html"><li>About us</li></a>|
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-    </div>
-    <img src="/svg/instagram-brands.svg" alt="Instagram" class="social">
-    <img src="/svg/twitter-brands.svg" alt="Twitter" class="social">
-    <img src="/svg/pinterest-brands.svg" alt="Pinterest" class="social">
-    <br>
-    <strong>© 2023 Greek Gods</strong>
-</footer>
 </html>

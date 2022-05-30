@@ -20,17 +20,16 @@ if (id == null)
     function listPosts(posts){
         let list = "";
         let button = "";
-        console.log(posts);
         for (let post of posts) {
             list += `
             <div class="post">
             <a href="./blog.html?id=${post.id}"><img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="imgposts postimg"></a>
             <h2 class="title lesom"><a href="./blog.html?id=${post.id}" class="decor">${post.title.rendered}</a></h2>
-            </div>`
+            </div>`;
         }
         button = `<div id="loadmore">
         <button id="loadm" onclick="loadMore()">Load More</button>
-        </div>`
+        </div>`;
         output.innerHTML = list + button;
     }
 }
@@ -48,6 +47,7 @@ fetch(url)
 
 
     function listPost(post){
+        const title = post.title.rendered
         output.innerHTML = `
             <div id="backbut">
                 <a href="./blog.html"><button id="back">Back</button></a>
@@ -57,19 +57,19 @@ fetch(url)
                 <div class="stylep">
                     ${post.content.rendered}
                 </div>
-            </div>
-            `
+            </div>`;
+            document.title = post.title.rendered
 
         const alignright = document.querySelectorAll(".alignright img");
             alignright.forEach(img => {
                 img.addEventListener('click', modal);
             }
-        )
+        );
         const alignleft = document.querySelectorAll(".alignleft img");
             alignleft.forEach(img => {
                 img.addEventListener('click', modal);
             }
-        )
+        );
     }
     
 }
@@ -84,7 +84,7 @@ function modal(){
 bigPicture.addEventListener('click',function(){
     this.style.display="none";
     }
-)
+);
 
 
 function loadMore() {
@@ -110,7 +110,7 @@ function loadMore() {
             <div class="post">
             <a href="./blog.html?id=${post.id}"><img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="imgposts postimg"></a>
             <h2 class="title lesom"><a href="./blog.html?id=${post.id}" class="decor">${post.title.rendered}</a></h2>
-            </div>`
+            </div>`;
         }
         output.innerHTML += list;
     }

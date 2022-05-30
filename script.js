@@ -18,12 +18,12 @@ function listPosts(posts){
         <div class="post">
         <a href="./blog.html?id=${post.id}"><img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="imgposts postimg"></a>
         <h2 class="title lesom"><a href="./blog.html?id=${post.id}" class="decor">${post.title.rendered}</a></h2>
-        </div>`
+        </div>`;
     }
     output.innerHTML = list;
 }
 
-carousel = document.getElementById("carousel")
+carousel = document.getElementById("carousel");
 
 function left() {
   carousel.scrollBy({
@@ -40,7 +40,7 @@ function right() {
   });
 }
 
-const submitted = document.querySelector("#submitted")
+const submitted = document.querySelector("#submitted");
 const form = document.querySelector("#form");
 
 const yourName = document.querySelector("#name");
@@ -92,5 +92,5 @@ function runForm(sub){
       } else {
         submitted.innerHTML = "You need to fix some errors";
       }
-};
+}
 
